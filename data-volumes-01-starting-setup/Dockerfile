@@ -6,8 +6,8 @@ COPY package.json .
 
 RUN npm install
 
-COPY . .
+copy . .
 
-EXPOSE 3000
+EXPOSE 80
 
-CMD [ "node", "app.mjs" ]
+CMD ["node","server.js"] 
